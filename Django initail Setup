@@ -1,0 +1,5 @@
+virtualenv venv -p python3
+source venv/bin/activate
+pip install django
+django-admin startproject Project_name
+python manage.py runserver  ### to test the set up
