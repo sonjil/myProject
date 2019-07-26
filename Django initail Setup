@@ -1,5 +1,15 @@
-virtualenv venv -p python3
-source venv/bin/activate
-pip install django
-django-admin startproject Project_name
+virtualenv venv -p python3 ### to setup virtual env
+source venv/bin/activate ### to activate the virtual env
+pip install django ### to install django in virtual env
+django-admin startproject Project_name ### to start a new project
 python manage.py runserver  ### to test the set up
+
+
+
+
+
+Create an object without saving	-------- board = Board()
+Save an object (create or update)-------	board.save()
+Create and save an object in the database-------	Board.objects.create(name='...', description='...')
+List all objects------	Board.objects.all()
+Get a single object, identified by a field-----	Board.objects.get(id=1)
